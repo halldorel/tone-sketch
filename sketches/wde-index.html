@@ -1,0 +1,49 @@
+<!-- WDE Music Generator by Halldór Eldjárn (hdor.is) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WDE Music Generator</title>
+    <meta charset="utf-8">
+    <script src="vendor/Tone.js"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="main">
+        <h1>wde music generator</h1>
+
+        <div class="xy-pad-wrap">
+            <canvas class="xy-pad" width="0" height="0">
+            </canvas>
+            
+            <div class="label side">
+                Contrast
+            </div>
+            <div class="label bottom">
+                Mood
+            </div>
+        </div>
+
+
+        <label for="complexity">Rhythm complexity: <span id="complexity-value">50</span>%</label>
+        <input type="range" name="complexity" id="complexity" min="0" max="100" />
+
+        <label for="density">Musical density: <span id="density-value">50</span>%</label>
+        <input type="range" name="density" id="density" min="0" max="100" />    </div>
+
+    <div class="overlay">
+        <input type="submit" id="start-button" value="Start" />
+    </div>
+
+    <input type="submit" id="play-button" value="Play" />
+    <input type="submit" id="stop-button" value="Stop" />
+    <input type="submit" id="export-button" value="Export" />
+
+    <a id="download_link" class="visually-hidden">Download file</a>
+
+    <script src="sketch-1575677111.js"></script>
+</body>
+</html>
